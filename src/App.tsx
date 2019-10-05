@@ -1,26 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {RiftGate, RiftProvider} from "rift-router";
+import routeStore from "./core/Stores/RouteStore";
+import "antd/dist/antd.css";
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <RiftProvider routes={routeStore}>
+        <RiftGate />
+      </RiftProvider>
+    </>
   );
-}
+};
 
 export default App;
