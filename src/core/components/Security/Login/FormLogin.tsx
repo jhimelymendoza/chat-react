@@ -4,6 +4,7 @@ import React from "react";
 import { useRouter } from 'rift-router';
 import { FormattedMessage, InjectedIntlProps, injectIntl } from 'react-intl';
 import {BlueSpan} from "./styles";
+import notificationsService from "../../../services/NotificationsServices";
 
 interface IFormLogin extends InjectedIntlProps {
 form:any
@@ -49,7 +50,7 @@ const FormLogin = (props: IFormLogin) => {
                 valuePropName: 'checked',
                 initialValue: true,
             })(<Checkbox> <FormattedMessage id="home.login.remember" defaultMessage="Recuerdame" /></Checkbox>)}
-            <BlueSpan>
+            <BlueSpan onClick={()=>{notificationsService.showInfo("Serio?","Solo me dio para esto")}}>
                 <FormattedMessage id="home.login.forgotPassword" defaultMessage="Olvido su contraseña?" />
             </BlueSpan>
             <Row>
