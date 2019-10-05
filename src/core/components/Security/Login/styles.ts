@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { Col, Row } from 'react-flexbox-grid';
-import { Card} from "antd";
+import {Col, Row} from 'react-flexbox-grid';
+import {Card} from "antd";
 
 export const LoginFormContainer = styled.div`
   width: 100%;
@@ -24,9 +24,12 @@ export const LoginContainer = styled(Col)`
   align-items: start;
 `;
 
-export const  LoginCard = styled(Card)`
+export const LoginCard = styled(Card)`
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
-  width: 300px
+  width: 317px
 `;
 
-
+export const BlueSpan = styled.span`
+    color: blueviolet;
+    cursor: pointer;
+`;

@@ -1,0 +1,45 @@
+{
+  "app": {
+    "settings": "Settings",
+    "notifications": "Notifications",
+    "close": "Close",
+    "searchFieldName": "Search field name",
+    "visible": "Visible",
+    "selectedValues": "Selected values",
+    "isEmpty": "Is empty",
+    "new": "New",
+    "edit": "Edit",
+    "delete": "Delete",
+    "save": "Save",
+    "all": "All",
+    "noSelection": "No selection",
+    "cancel": "Cancel",
+    "export": "Export",
+    "ok": "Ok",
+    "errorSaveData": "Error saving data",
+    "changesWillBeLost": "Changes will be lost!",
+    "saveConfirmation": "Are you sure you want to save the changes?",
+    "confirmationAction": "Are you sure to do this action ?",
+    "invalidForm": "Invalid Form",
+    "itemSaved": "Item Successfully Saved",
+    "itemDeleted": "Item Successfully Deleted",
+    "es": "Spanish",
+    "en": "English",
+    "fr": "French",
+    "knowledgeBase": "Knowledge Base",
+    "byPages": "By Pages"
+  },
+  "Home": {
+    "login": {
+      "msg": "Log-in to your account",
+      "loginBtn": "Login",
+      "error": "Incorrect Username or Password",
+      "username": "Username",
+      "pass": "Password",
+      "company": "Company",
+      "selectCompany": "Select company",
+      "forgotPassword": "Forgot password",
+      "remember": "Remember"
+    }
+  }
+}

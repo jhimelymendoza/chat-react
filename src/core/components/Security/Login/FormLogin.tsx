@@ -2,9 +2,14 @@ import {Button, Checkbox, Form, Icon, Input} from "antd";
 import {Col, Row} from 'react-flexbox-grid';
 import React from "react";
 import { useRouter } from 'rift-router';
+import { FormattedMessage, InjectedIntlProps, injectIntl } from 'react-intl';
+import {BlueSpan} from "./styles";
 
+interface IFormLogin extends InjectedIntlProps {
+form:any
+}
 
-const FormLogin = (props: any) => {
+const FormLogin = (props: IFormLogin) => {
     const router = useRouter();
     const handleSubmit = (e: any) => {
         e.preventDefault();
@@ -24,7 +29,7 @@ const FormLogin = (props: any) => {
             })(
                 <Input
                     prefix={<Icon type="user" style={{color: 'rgba(0,0,0,.25)'}}/>}
-                    placeholder="Username"
+                    placeholder={props.intl.formatMessage({ id: 'home.login.username' })}
                 />,
             )}
         </Form.Item>
@@ -35,7 +40,7 @@ const FormLogin = (props: any) => {
                 <Input
                     prefix={<Icon type="lock" style={{color: 'rgba(0,0,0,.25)'}}/>}
                     type="password"
-                    placeholder="Password"
+                    placeholder={props.intl.formatMessage({ id: 'home.login.pass' })}
                 />,
             )}
         </Form.Item>
@@ -43,16 +48,15 @@ const FormLogin = (props: any) => {
             {getFieldDecorator('remember', {
                 valuePropName: 'checked',
                 initialValue: true,
-            })(<Checkbox>Remember me</Checkbox>)}
-            <a className="login-form-forgot" href="">
-                Forgot password
-            </a>
-
+            })(<Checkbox> <FormattedMessage id="home.login.remember" defaultMessage="Recuerdame" /></Checkbox>)}
+            <BlueSpan>
+                <FormattedMessage id="home.login.forgotPassword" defaultMessage="Olvido su contraseña?" />
+            </BlueSpan>
             <Row>
                 <Col xs={12}>
                     <Row center="xs">
                         <Button type="primary" htmlType="submit" className="login-form-button">
-                            Log in
+                            <FormattedMessage id="home.login.msg" defaultMessage="Log-in to your account" />
                         </Button>
                     </Row>
                 </Col>
@@ -61,5 +65,7 @@ const FormLogin = (props: any) => {
     </Form>
 };
 
-const FormLoginWrapped = Form.create({name: 'normal_login'})(FormLogin);
+const FormLoginWrapped = Form.create({name: 'normal_login'})(injectIntl(FormLogin));
 export default FormLoginWrapped;
+
+

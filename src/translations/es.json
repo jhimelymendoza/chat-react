@@ -1,0 +1,45 @@
+{
+  "app": {
+    "settings": "Ajustes",
+    "notifications": "Notificaciones",
+    "close": "Cerrar",
+    "searchFieldName": "Campos",
+    "visible": "Visible",
+    "selectedValues": "Valores seleccionados",
+    "isEmpty": "Permitir vacío",
+    "new": "Nuevo",
+    "edit": "Editar",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "all": "Todos,",
+    "noSelection": "No selección",
+    "export": "Exportar",
+    "ok": "Aceptar",
+    "errorSaveData": "Error al salvar los datos",
+    "changesWillBeLost": "Los cambios se perderán!",
+    "confirmationAction": "Está seguro que desea realizar esta acción",
+    "saveConfirmation": "Está seguro que desea guardar los cambios?",
+    "deleteProfileConfirmation": "Está seguro que desea eliminar el profile seleccionado?",
+    "invalidForm": "Formulario inválido",
+    "itemSaved": "Elemento salvado Satisfactoriamente",
+    "itemDeleted": "Elemento eliminado Satisfactoriamente",
+    "es": "Español",
+    "en": "Ingles",
+    "fr": "Frances",
+    "byPages": "Por Páginas"
+  },
+  "home": {
+    "login": {
+      "msg": "Ingrese a su cuenta",
+      "loginBtn": "Iniciar sesión",
+      "error": "Usuario o Contraseña Incorrecto",
+      "username": "Usuario",
+      "pass": "Contraseña",
+      "company": "Compañía",
+      "selectCompany": "Seleccionar compañía",
+      "forgotPassword": "Recuperar contraseña?",
+      "remember": "Recuerdame"
+    }
+  }
+}
